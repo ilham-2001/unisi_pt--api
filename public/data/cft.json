@@ -1,0 +1,88 @@
+[
+    {
+        "uid": 1,
+        "pj_cft": 19523066,
+        "title": "Sistem Monitoring akuarium", 
+        "jenis_kegiatan": "PKM",
+        "open_regis_date": "2022-04-21",
+        "due_regis_date": "2022-05-01",
+        "job_description": [
+            "Membuat website sebagai interface alat monitoring",
+            "Melakukan serangkaian acara PKM sampai dengan PIMNAS (jika lolos)"
+        ],
+        "kualifikasi": [
+            "Dapat melakukan pemrograman website",
+            "Berkomitmen selama kegiatan",
+            "Diutamakan mahasiswa informatika"
+        ]
+    },
+    {
+        "uid": 2,
+        "pj_cft": 19523066,
+        "title": "Analisis design dalam pembuatan aplikasi bergerak", 
+        "jenis_kegiatan": "Gemastik",
+        "open_regis_date": "2022-04-21",
+        "due_regis_date": "2022-05-01",
+        "job_description": [
+            "Membuat dan mendesign prototype produk menggunakan tools design",
+            "Mengikuti serangkaian acara samapi selesai"
+        ],
+        "kualifikasi": [
+            "Dapat mendesign dan memahami UI/UX",
+            "Berkomitmen selama kegiatan",
+            "Diutamakan mahasiswa informatika"
+        ]
+    },
+    {
+        "uid": 3,
+        "pj_cft": 19523066,
+        "title": "Sistem Monitoring pengunaan ", 
+        "jenis_kegiatan": "Gemastik",
+        "open_regis_date": "2022-04-21",
+        "due_regis_date": "2022-05-01",
+        "job_description": [
+            "Membuat dan mendesign prototype produk menggunakan tools design",
+            "Mengikuti serangkaian acara samapi selesai"
+        ],
+        "kualifikasi": [
+            "Dapat mendesign dan memahami UI/UX",
+            "Berkomitmen selama kegiatan",
+            "Diutamakan mahasiswa informatika"
+        ]
+    },
+    {
+        "uid": 4,
+        "pj_cft": 19523066,
+        "title": "Sistem Monitoring akuarium", 
+        "jenis_kegiatan": "Gemastik",
+        "open_regis_date": "2022-04-21",
+        "due_regis_date": "2022-05-01",
+        "job_description": [
+            "Membuat dan mendesign prototype produk menggunakan tools design",
+            "Mengikuti serangkaian acara samapi selesai"
+        ],
+        "kualifikasi": [
+            "Dapat mendesign dan memahami UI/UX",
+            "Berkomitmen selama kegiatan",
+            "Diutamakan mahasiswa informatika"
+        ]
+    },
+    {
+        "uid": 5,
+        "pj_cft": 19523066,
+        "title": "Sistem Monitoring akuarium", 
+        "jenis_kegiatan": "Gemastik",
+        "open_regis_date": "2022-04-21",
+        "due_regis_date": "2022-05-01",
+        "job_description": [
+            "Membuat dan mendesign prototype produk menggunakan tools design",
+            "Mengikuti serangkaian acara samapi selesai"
+        ],
+        "kualifikasi": [
+            "Dapat mendesign dan memahami UI/UX",
+            "Berkomitmen selama kegiatan",
+            "Diutamakan mahasiswa informatika"
+        ]
+    }   
+]
+
