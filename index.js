@@ -1,5 +1,5 @@
 const express = require('express');
-const cors = require('cors')
+const cors = require('cors')    
 const {readFile} = require('./functions')
 
 const app = express()
@@ -7,6 +7,11 @@ const app = express()
 app.use(cors());
 
 app.get('/', (req, res) => {
+    res.set('Content-Type', 'application/json');
+    res.send(({'message': 'Hello world!'}));
+})
+
+app.get('/cft', (req, res) => {
     res.set('Content-Type', 'application/json')
     res.send(readFile());
 });

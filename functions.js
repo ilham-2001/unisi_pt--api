@@ -1,12 +1,12 @@
-const fs = require('fs/promises');
+const fs = require('fs');
 
-const readFile = async () => {
+const readFile = () => {
   try {
-    const file = await fs.readFile('./public/data/cft.json');
+    const file = fs.readFileSync('./public/data/cft.json');
 
-    return file.toString()
+    return JSON.parse(file)
   } catch (err) {
-    console.log('error');
+    console.log(err);
   }
 };
 
