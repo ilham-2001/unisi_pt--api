@@ -23,14 +23,20 @@ app.get('/cft', (req, res) => {
 app.post('/login', (req, res) => {
     const {email, password} = req.body
 
+    res.set('Content-Type', 'application/json');
+
     query.verifyLogin(email, password).then(([rows, field]) => {
-        res.set('Content-Type', 'application/json');
+        res.status(200);
+        
+        if (rows.length === 0) {
+            res.send({'verified': 0});
+        }
         res.send(rows[0]);
     }).catch((err) => {
         throw err;
     });
 })
 
-app.listen(3001, 'localhost', () => {
-    console.log('Starting at port 3001')
+    app.listen(3001, 'localhost', () => {
+        console.log('Starting at port 3001')
 });
