@@ -23,13 +23,13 @@ app.get('/cft', (req, res) => {
 app.post('/registration', (req, res) => {
     const {name, email, noTelepon, tglLahir, jurusan} = req.body;
     
-    console.log(name, email, noTelepon, tglLahir, jurusan);
+    console.log(req.body);
 })
 
 app.post('/login', (req, res) => {
     const {email, password} = req.body
 
-        console.log(req.body);
+    console.log(req.body);
 
     res.set('Content-Type', 'application/json');
 
