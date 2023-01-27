@@ -20,8 +20,16 @@ app.get('/cft', (req, res) => {
     res.send(readFile());
 });
 
+app.post('/registration', (req, res) => {
+    const {name, email, noTelepon, tglLahir, jurusan} = req.body;
+    
+    console.log(name, email, noTelepon, tglLahir, jurusan);
+})
+
 app.post('/login', (req, res) => {
     const {email, password} = req.body
+
+        console.log(req.body);
 
     res.set('Content-Type', 'application/json');
 
@@ -37,6 +45,6 @@ app.post('/login', (req, res) => {
     });
 })
 
-    app.listen(3001, 'localhost', () => {
+app.listen(3001, 'localhost', () => {
         console.log('Starting at port 3001')
-});
+}); 
