@@ -3,6 +3,7 @@ const cors = require('cors');
 const bodyparser = require('body-parser');
 const {readFile} = require('./functions');
 const query = require('./model/query'); 
+const { response } = require('express');
 
 const app = express()
 
@@ -12,7 +13,7 @@ app.use(bodyparser.json());
 
 app.get('/', (req, res) => {
     res.set('Content-Type', 'application/json');
-    res.send(({'message': 'Hello world!'}));
+    res.send(({message: 'Hello world!'}));
 })
 
 app.get('/cft', (req, res) => {
@@ -21,9 +22,14 @@ app.get('/cft', (req, res) => {
 });
 
 app.post('/registration', (req, res) => {
-    const {name, email, noTelepon, tglLahir, jurusan} = req.body;
-    
     console.log(req.body);
+
+    query.registerAccount(req.body).then(([rows, field]) => {
+        console.log(rows.affectedRows);
+        console.log(rows.serverStatus);
+    }).catch((err) => {
+        res.send({error: true, message: err.sqlMessage})
+    });
 })
 
 app.post('/login', (req, res) => {
@@ -37,7 +43,7 @@ app.post('/login', (req, res) => {
         res.status(200);
         
         if (rows.length === 0) {
-            res.send({'verified': 0});
+            res.send({verified: 0});
         }
         res.send(rows[0]);
     }).catch((err) => {
